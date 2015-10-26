@@ -9,9 +9,9 @@ pascalTriangleHolder.innerHTML = render(pascal(10));
 function multiplicationTable(size) {
   var table = [];
   var result;
-  for (var i = 1; i <= 10; i++){
+  for (var i = 1; i <= size; i++){
     table[i - 1] = [];
-      for (var j = 1; j <= 10; j++){
+    for (var j = 1; j <= size; j++){
         result = i * j;
         table[i - 1][j - 1] = result;
       }
@@ -20,9 +20,9 @@ function multiplicationTable(size) {
 }
 function matrix (size) {
   var matrix = [];
-  for(var i = 1; i <= 10; i++){
+  for(var i = 1; i <= size; i++){
     matrix[i - 1] = [];
-    for(var j = 1; j <= 10; j++){
+    for(var j = 1; j <= size; j++){
       /* 1 */
       if (i === j){
         matrix[i - 1][j - 1] = 1;
@@ -53,9 +53,9 @@ function matrix (size) {
 }
 function pascal (size) {
   var triangle = [];
-    for (var i = 0; i < 10; i++){
+    for (var i = 0; i < size; i++){
       triangle [i] = [];
-      for (var j = 0; j < 10; j++){
+      for (var j = 0; j < size; j++){
         if(i > j && i >= 1 && j <= 0 ){
           triangle[i][j] = 1;
         }

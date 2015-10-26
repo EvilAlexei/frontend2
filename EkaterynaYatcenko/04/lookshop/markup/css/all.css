@@ -6,6 +6,7 @@ body{
 	color: #000;
 	font: 1.083em/1.692em Arial, Helvetica, sans-serif;
 	background: #fff;
+	min-width: 320px;
 }
 img{
 	border-style: none;
