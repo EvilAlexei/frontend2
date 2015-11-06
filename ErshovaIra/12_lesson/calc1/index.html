@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+  <style>
+    button {
+      border: 1px solid red;
+      text-decoration: none;
+      padding: 5px;
+    }
+    
+    input {
+      display: block;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <form action="#">
+      <fieldset>
+        <input id="first-value" type="text" value="" />
+        <div id="operators">
+          <button class="operator" id="+">+</button>
+          <button class="operator" id="-">-</button>
+          <button class="operator" id="*">*</button>
+          <button class="operator" id="/">/</button>
+        </div>
+        <input id="second-value" type="text" value="" />
+        <button id="btn-calc">Calculate</button>
+        <input id="result" type="text" value="" />
+      </fieldset>
+    </form>
+  </div>
+  <script src="js/main.js"></script>
+	</body>
+</head>
+</html>
+
