@@ -1,0 +1,324 @@
+body{
+	margin:0;
+	padding:0;
+	font:10px Tahoma, Arial, sans-serif;
+}
+
+#wrapper{
+	margin:0 auto;
+	width:1500px;
+	height:2420px;
+	background: url(../images/fon.png) no-repeat;
+}
+.clear{
+	clear:both;
+}
+
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+a { 
+    text-decoration: none;
+}
+
+h1{
+	font-size:32px;
+}
+
+#wrcontent{
+	padding:0 250px;
+}
+/*Шапка сайта*/
+
+#header{
+	height:85px;
+	padding-top:20px;
+	position:relative;
+}
+
+#logo{
+	height:65px;
+	width:190px;
+	background: url(../images/logo.png) no-repeat;
+	padding-bottom:0;
+	float:left;
+}
+
+#search{
+	height:25px;
+	border:1px solid #ccc;
+	float:left;
+	margin-top:20px;
+	margin-left:150px;
+	box-shadow:0px 1px 0px #eee;
+	-webkit-box-shadow:0px 1px 0px #eee;
+	-moz-box-shadow:0px 1px 0px #eee;
+	-o-box-shadow:0px 1px 0px #eee;
+}
+
+.butSearch{
+	float:left;
+	margin-top:20px;
+}
+
+.socialMenu{
+	position:absolute;
+	right:0px;
+	margin-top:20px;
+}
+
+.socialMenu li{
+	float:left;
+	padding: 0 3px;
+}
+
+/*Шапка сайта*/
+/*навигация*/
+
+#nav{
+	height:40px;
+	margin-bottom:10px;
+	position:relative;
+}
+
+.mainMenu{
+	position:absolute;
+	left:3px;
+}
+
+.mainMenu li{
+	float:left;
+	text-align:center;
+}
+
+.contact{
+	width:320px;
+	background-color:#898989;
+}
+
+.home{
+	width:86px;
+	background-color:#00aedb;
+}
+
+.cinema{
+	width:100px;
+	background-color:#8cc63f;
+}
+
+.magazine{
+	width:108px;
+	background-color:#5261ac;
+}
+
+.cssauthor{
+	width:170px;
+	background-color:#00aedb;
+}
+
+.topmenu{
+	width:100px;
+	background-color:#f78f1d;
+}
+
+.archives{
+	width:110px;
+	background-color:red;
+}
+
+.white{
+	color:white;
+}
+
+/*навигация*/
+/*Галерея*/
+
+#gallery{
+	height:350px;
+}
+
+.stories{
+	font-size:18px;
+	color:#00aedb;
+}
+
+.pictures li{
+	float:left;
+	padding: 0 3px;
+}
+
+.perehodi li{
+	float:left;
+	padding: 0 2.5px;
+}
+
+.podpisi li{
+	float:left;
+	width:275px;
+	text-align:left;
+	font: 14px Verdana, Geneva, sans-serif;
+	padding-right:56px;
+	padding-left:2px;
+}
+
+/*Галерея*/
+/*Контент*/
+
+#content{
+	width:655px;
+	height:1800px;
+	float:left;
+}
+
+.textTwo{
+	font-size:28px;
+	text-align:center;
+	color:#00aedb;
+}
+
+.text{
+	text-align:justify;
+	font-size:14px;
+}
+
+.wrfotos{
+	width:650px;
+	height:565px;
+	outline:1px solid #bfbfbf;
+	background:#fafafa;
+	padding: 7px 0px;
+}
+
+.bigFoto{
+	width:626px;
+	height:378px;
+	background: url(../images/foto7.png) no-repeat;
+	margin-left:12px;
+}
+
+.moreFoto li{
+	float:left;
+	padding: 22px 7px;
+}
+
+.readMore{
+	margin-left:565px;
+}
+
+.moreFotos{
+	margin-left:3px;
+}
+
+.up{
+	margin-left:255px;
+}
+
+/*Контент*/
+/*сайт бар*/
+
+#sidebarRight{
+	width:330px;
+	height:1840px;
+	float:right;
+	padding-top:25px;
+}
+
+.littleMenu li{
+	float:left;
+	text-align:center;
+}
+
+.fashion{
+	width:100px;
+	background-color:#ec098d;
+}
+
+.orangeCinema{
+	width:100px;
+	background-color:#f78f1d;
+}
+
+.television{
+	width:130px;
+	background-color:#00aedb;
+}
+
+.box{
+	width:330px;
+	position:relative;
+}	
+
+.imageBox{
+	padding-top:16px;
+	float:left;
+}	
+
+.blu{
+	color:#00aedb;
+	font-size:14px;
+}
+
+.textBarP{
+	text-align:justify;
+}
+
+.textBox{
+	padding-top:46px;
+	position:absolute;
+	right:0px;
+	width:230px;
+}
+
+.fotoBar{
+	float:left;
+}
+
+.textBarTwo{
+	margin-left:102px;
+}
+
+.textBarPTwo{
+	text-align:justify;
+	margin-left:102px;
+}
+
+.you{
+	padding-left:2px;
+}
+
+.tegOne{
+	font-size:16px;
+	color:#5261ac;
+}
+
+.tegTwo{
+	font-weight: bold;
+	font-size:24px;
+	color:#f78f1d;
+}
+
+.tegThre{
+	font-weight: bold;
+	font-size:12px;
+	color:#5261ac;
+}
+
+.tegFour{
+	font-size:24px;
+	color:#5261ac;
+}
+
+.tegFive{
+	font-size:10px;
+	color:#5261ac;
+	font-weight: bold;
+}
+
+/*сайт бар*/
+
+#footer{
+	height:50px;
+}
