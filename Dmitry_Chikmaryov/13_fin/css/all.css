@@ -45,6 +45,9 @@ header, footer, article, section, hgroup, nav, figure { display: block; }
 	border: 1px solid #000;
 }
 
+.list li {
+	cursor: pointer;}
+
 .active {
 	color: green!important;
 	text-transform: uppercase;
