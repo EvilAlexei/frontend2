@@ -26,27 +26,27 @@ function matrix (size) {
     matrix[i]=[];
     for (var k=0; k<size; k++)
     {
-      if (i==k)                                  // диагональ с "1"
+      if (i==k)                                  // РґРёР°РіРѕРЅР°Р»СЊ СЃ "1"
       {
         matrix[i][k]=1;
       }
-      else if (i+k==size-1)                      //диагональ с "2"
+      else if (i+k==size-1)                      //РґРёР°РіРѕРЅР°Р»СЊ СЃ "2"
       {
         matrix[i][k]=2;
       }
-      else if (i<4 && i<k && k<((size-1)-i))    //заполнение "3"
+      else if (i<4 && i<k && k<((size-1)-i))    //Р·Р°РїРѕР»РЅРµРЅРёРµ "3"
       {
         matrix[i][k]=3;
       }
-      else if (k>5 && i<k && i>((size-1)-k))    //заполнение "4"
+      else if (k>5 && i<k && i>((size-1)-k))    //Р·Р°РїРѕР»РЅРµРЅРёРµ "4"
       {
         matrix[i][k]=4;
       }
-      else if (i>5 && i>k && k>((size-1)-i))    //заполнение "5"
+      else if (i>5 && i>k && k>((size-1)-i))    //Р·Р°РїРѕР»РЅРµРЅРёРµ "5"
       {
         matrix[i][k]=5;
       }
-      else                                      //заполнение "6"
+      else                                      //Р·Р°РїРѕР»РЅРµРЅРёРµ "6"
       {
         matrix[i][k]=6;
       }
