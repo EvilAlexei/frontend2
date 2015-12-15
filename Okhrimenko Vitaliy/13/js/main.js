@@ -22,15 +22,17 @@ $(document).ready(function() {
     });
 
 //4 (добавить порядковый номер всем четным элементам списка)
-    $('ul.list li:odd').each(function(index){
-            $(this).prepend(index + 2);
+    $('ul.list li').each(function(index){
+        if (index %2) {
+            $(this).prepend(index + 1);
+        }
     });
 
 //5 (при выборее элемента, назначить на него класс "active")
     $(".list li").on("click", function(){
         $(this).parent().find("li").removeClass("active");
         $(this).addClass("active");
-    })
+    });
 
 // вызов функций
     sameHeight($('.container .box'));
