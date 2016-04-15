@@ -37,9 +37,12 @@ $(document).ready(function(){
     })
 
     //Setting .active class onclick for li
-    $('ul li').on('click', function(){
-        $('ul li').removeClass('active');
-        $(this).addClass('active');
-    });
+    $('.list').each(function(){
+        var ul = $(this);
+        $(this).find('li').click(function(){
+            ul.find('li').removeClass('active');
+            $(this).addClass('active');
+        })
+    })
 });
 
