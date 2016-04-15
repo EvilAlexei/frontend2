@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta charset= "utf-8">
+	<title>lookshop</title>
+	<link href="style/style.css" rel="stylesheet" type="text\css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$('.bxslider').bxSlider({
+			
+		});
+		});
+	</script>
+	<script>
+		$(document).ready(function(){
+		$(".tab_content").hide();
+		$("ul.tabs li:first").addClass("active").show();
+		$(".tab_content:first").show();
+		$("ul.tabs li").click(function(){
+		$("ul.tabs li").removeClass("active");
+		$(this).addClass("active");
+		$(".tab_content").hide();
+		var activeTab = $(this).find("a").attr("href");
+		$(activeTab).fadeIn();
+		return false;});});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$('.slider1').bxSlider({
+		pager:false,
+		slideWidth: 240,
+		minSlides: 2,
+		maxSlides: 9,
+		slideMargin: 30
+		});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+		$("ul.menu_body li:even").addClass("alt");
+		$('img.menu_head').click(function () {
+		$('ul.menu_body').slideToggle('medium');
+		});
+	
+		});
+	</script>
+ </head>
+ <body>
+	<div id="wrapper">
+		<div id="header">
+			<div class="container">
+				<div class="custom-care">
+					<p> CUSTOM CARE: 888-23-4567</p>
+				</div>
+				<div class="my-account">
+					<ul class="ul-nav">
+						<li class="us"><a href="#" title="link">&#36; US</a>
+							<ul>
+								<li><a href="#" title="link">&#8364; EUR</a></li>
+								<li><a href="#" title="link">&#8372; UAH</a></li>
+							</ul>
+						</li>
+						<li class="my"><a href="#" title="link">MY ACCAUNT</a></li>
+						<li><a class="watch" href="#" title="link"><img class="watch-640" src="images/watch.png" alt="" /></a></li>
+					</ul>
+				</div>
+				 <div class="clearfix"></div>
+				<div class="logo">
+					<a href="#" title="link"><img src="images/logo.png" alt="" /></a>
+				</div>
+				<div class="buy">
+					<form action="#">
+						<div class="cart">
+							<ul>
+								<li><a href="#" title="link">Your cart</a></li>
+								<li class="li-cart"><a href="#" title="link">&#9660;</a></li>
+							</ul>
+						</div>
+						<div class="tems">
+							<ul>
+								<li><a href="#" title="link">0</a></li>
+								<li><a href="#" title="link">TEMS</a></li>
+								<li><a href="#" title="link">&#36;0</a></li>
+							</ul>
+						</div>
+					</form>
+				</div>
+				<div class="menu">
+					<p class="p-menu">MENU</p>
+					<img src="images/click.png" class="menu_head" alt="" />
+					<ul class="menu_body">
+						<li><a href="#" title="link">new &#9660;</a></li>
+						<li><a href="#" title="link">designers &#9660;</a></li>
+						<li><a href="#" title="link">women&#9660;</a></li>
+						<li><a href="#" title="link">men &#9660;</a></li>
+						<li><a href="#" title="link">clearence &#9660;</a></li>
+					</ul>
+				</div>
+				 <div class="clearfix"></div>
+			</div>
+		</div>
+		<div id="main">
+			<div class="container">
+				<div class="gallery">
+					<ul class="bxslider">
+						<li><img src="images/crazy.png" alt="" /></li>
+						<li><img src="images/crazy.png" alt="" /></li>
+						<li><img src="images/crazy.png" alt="" /></li>
+						<li><img src="images/crazy.png" alt="" /></li>
+						<li><img src="images/crazy.png" alt="" /></li>
+					</ul>
+						<form  action="#">
+							<input type="submit" value="SHOP NOW &#9654;" class="btn-shop-now">
+						</form>	
+				</div>
+				<div class="stay-update">
+					<div class="stay">
+						<p>Stay updated</p>
+					</div>
+					<div class="email">
+						<form class="mail-form">
+							<input type="text" placeholder="   your email address"  class="imput-text">
+							<input type="submit"  value="+" class="btn-plus">
+						</form>
+					</div>
+					<div class="find">
+						<ul>
+							<li><p>Find us here</p></li>
+							<li class="li-white"><a href="#" title="link"><img src="images/ff.png" alt="" /></a></li>
+							<li class="li-greey"><a href="#" title="link"><img src="images/twtw.png" alt="" /></a></li>
+							<li class="li-white"><a href="#" title="link"><img src="images/pp.png" alt="" /></a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="more-foto">
+					<div class="foto-column-one">
+						<a href="#" title="link"><img src="images/looks.png" alt="" /></a>
+					</div>
+					<div class="foto-column-two">
+						<div class="party">
+							<a href="#" title="link"><img src="images/party.png" alt="" /></a>
+						</div>
+						<div class="sellers">
+							<a href="#" title="link"><img src="images/sellers.png" alt="" /></a>
+						</div>
+						<div class="fall">
+							<a href="#" title="link"><img src="images/fall.png" alt="" /></a>
+						</div>
+						 <div class="clearfix"></div>
+					</div>
+					 <div class="clearfix"></div>
+				</div>
+				<div id="tab">
+					<ul class="tabs">
+						<li class="active"><a href="#tab1">WHAT'S HOT?</a></li>
+						<li class=""><a href="#tab2">DESIGNERS</a></li>
+						<li class=""><a href="#tab3">FEATURED</a></li>
+						<li class=""><a href="#tab4">LATEST</a></li>
+					</ul>
+					<div class="tab_container">
+						<div id="tab1"class="tab_content">
+							<div class="gallery-slider">
+								<div class="slider1">
+									<div class="slide">
+										<div class="box">
+											<div class="box-1">
+												<img src="images/5.png" alt="" />
+											</div>
+											<p class="clothing-name">LOREM IPSUM</p>
+											<p class="money">$77.70</p>
+											<form  action="#">
+												<input type="submit" value="ADD TO CART &#43;" class="btn-add-cart">
+											</form>	
+										</div>
+									</div>
+									<div class="slide">
+										<div class="box">
+											<div class="box-1">
+												<img src="images/6.png" alt="" />
+											</div>
+											<p class="clothing-name">LOREM IPSUM</p>
+											<p class="money">$77.70</p>
+											<form  action="#">
+												<input type="submit" value="ADD TO CART &#43;" class="btn-add-cart">
+											</form>	
+										</div>
+									</div>
+									<div class="slide">
+										<div class="box">
+											<div class="box-1">
+												<img src="images/7.png" alt="" />
+											</div>
+											<p class="clothing-name">LOREM IPSUM</p>
+											<p class="money">$77.70</p>
+											<form  action="#">
+												<input type="submit" value="ADD TO CART &#43;" class="btn-add-cart">
+											</form>	
+										</div>
+									</div>
+									<div class="slide">
+										<div class="box">
+											<div class="box-1">
+												<img src="images/8.png" alt="" />
+											</div>
+											<p class="clothing-name">LOREM IPSUM</p>
+											<p class="money">$77.70</p>
+											<form  action="#">
+												<input type="submit" value="ADD TO CART &#43;" class="btn-add-cart">
+											</form>	
+										</div>		
+									</div>
+									<div class="slide">
+										<div class="box">
+											<div class="box-1">
+												<img src="images/9.png" alt="" />
+											</div>
+											<p class="clothing-name">LOREM IPSUM</p>
+											<p class="money">$77.70</p>
+											<form  action="#">
+												<input type="submit" value="ADD TO CART &#43;" class="btn-add-cart">
+											</form>	
+										</div>
+									</div>
+									<div class="slide">
+										<div class="box">
+											<div class="box-1">
+												<img src="images/10.png" alt="" />
+											</div>
+											<p class="clothing-name">LOREM IPSUM</p>
+											<p class="money">$77.70</p>
+											<form  action="#">
+												<input type="submit" value="ADD TO CART &#43;" class="btn-add-cart">
+											</form>	
+										</div>
+									</div>
+									<div class="slide">
+										<div class="box">
+											<div class="box-1">
+												<img src="images/11.png" alt="" />
+											</div>
+											<p class="clothing-name">LOREM IPSUM</p>
+											<p class="money">$77.70</p>
+											<form  action="#">
+												<input type="submit" value="ADD TO CART &#43;" class="btn-add-cart">
+											</form>	
+										</div>
+									</div>
+									<div class="slide">
+										<div class="box">
+											<div class="box-1">
+												<img src="images/12.png" alt="" />
+											</div>
+											<p class="clothing-name">LOREM IPSUM</p>
+											<p class="money">$77.70</p>
+											<form  action="#">
+												<input type="submit" value="ADD TO CART &#43;" class="btn-add-cart">
+											</form>	
+										</div>
+									</div>
+									<div class="slide">
+										<div class="box">
+											<div class="box-1">
+												<img src="images/7.png" alt="" />
+											</div>
+											<p class="clothing-name">LOREM IPSUM</p>
+											<p class="money">$77.70</p>
+											<form  action="#">
+												<input type="submit" value="ADD TO CART &#43;" class="btn-add-cart">
+											</form>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="tab2"class="tab_content"></div>
+						<div id="tab3"class="tab_content"></div>
+						<div id="tab4"class="tab_content"></div>
+					</div>
+				</div>
+				<div class="fifty-off">
+					<img src="images/50off.png" alt="" />
+				</div>
+				<div class="different-foto">
+					<div class="box-2">
+						<div class="box-1">
+							<img src="images/7.png" alt="" />
+						</div>
+						<p class="clothing-name">LOREM IPSUM</p>
+						<p class="money">$77.70</p>
+						<form  action="#">
+							<input type="submit" value="ADD TO CART &#43;" class="btn-add-cart">
+						</form>	
+					</div>
+					<div class="box-2">
+						<div class="box-1">
+							<img src="images/5.png" alt="" />
+						</div>
+						<p class="clothing-name">LOREM IPSUM</p>
+						<p class="money">$77.70</p>
+						<form  action="#">
+							<input type="submit" value="ADD TO CART &#43;" class="btn-add-cart">
+						</form>	
+					</div>
+					<div class="box-2" id="box-2-768" >
+						<div class="box-1">
+							<img src="images/11.png" alt="" />
+						</div>
+						<p class="clothing-name">LOREM IPSUM</p>
+						<p class="money">$77.70</p>
+						<form  action="#">
+							<input type="submit" value="ADD TO CART &#43;" class="btn-add-cart">
+						</form>	
+					</div>
+					<div class="box-2 none-640" >
+						<div class="box-1">
+							<img src="images/7.png" alt="" />
+						</div>
+						<p class="clothing-name">LOREM IPSUM</p>
+						<p class="money">$77.70</p>
+						<form  action="#">
+							<input type="submit" value="ADD TO CART &#43;" class="btn-add-cart">
+						</form>	
+					</div>
+					 <div class="clearfix"></div>
+				</div>
+				<div class="favourite-brands">
+					<div class="for-pp">
+						<p>FAVOURITE BRANDS</p>
+					</div>
+					<ul class="brands">
+						<li><a href="#" title="link"><img src="images/addict.png" alt="logo"></a></li>
+						<li><a href="#" title="link"><img src="images/adidas.png" alt="logo"></a></li>
+						<li><a href="#" title="link"><img src="images/boy.png" alt="logo"></a></li>
+						<li><a href="#" title="link"><img src="images/converse.png" alt="logo"></a></li>
+						<li><a href="#" title="link"><img src="images/calvin.png" alt="logo"></a></li>
+						<li><a href="#" title="link"><img src="images/edwin.png" alt="logo"></a></li>
+						<li class="none-768"><a href="#" title="link"><img src="images/grenson.png" alt="logo"></a></li>
+					</ul>	
+				</div>
+				<div class="about-lookshop">
+					<p class="look-shop"> About LookShop</p>
+					<p class="about-look">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+						doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+						beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+						sed quia consequuntur magni dolores eos quiunde omnis iste natus error sit voluptatem ratione voluptatem sequi nesciunt.
+						Neque porro quisquam est, qui dolorem
+						beatae vitae dicta sunt explicabo. 
+					</p>
+				</div>
+				<div class="we-accept">
+					<ul class="payment-cards">
+						<li>
+							<a id="accept" href="#" title="link">We accept</a>
+						</li>
+						<li>
+							<a class="visa" href="#" title="link">visa</a>
+						</li>
+						<li>
+							<a class="master-card" href="#" title="link">master-card</a>
+						</li>
+						<li>
+							<a class="paypal" href="#" title="link">pay pal</a>
+						</li>
+						<li>
+							<a class="american-express" href="#" title="link">american-express</a>
+						</li>
+						<li>
+							<a class="visa-elektron" href="#" title="link">visa-elektron</a>
+						</li>
+						<li>
+							<a class="laser" href="#" title="link">laser</a>
+						</li>
+						<li>
+							<a class="maestro" href="#" title="link">maestro</a>
+						</li>
+						<li>
+							<a class="delta" href="#" title="link">delta</a>
+						</li>
+						<li>
+							<a class="soco" href="#" title="link">soco</a>
+						</li>
+						<li>
+							<a class="idea" href="#" title="link">idea</a>
+						</li>
+						<li>
+							<a class="dk" href="#" title="link">dk</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer-bar">
+				<div class="container-bar">
+					<div class="customers-service">
+						<p>Customer Service</p>
+						<ul>
+							<li>
+								<a href="#" title="link">Contact</a>
+							</li>
+							<li>
+								<a href="#" title="link">FAQ</a>
+							</li>
+							<li>
+								<a href="#" title="link">Terms of payment</a>
+							</li>
+							<li>
+								<a href="#" title="link">Tems of sale</a>
+							</li>
+							<li>
+								<a href="#" title="link">Delivery terms and conditions</a>
+							</li>
+							<li>
+								<a href="#" title="link">Returns and Refunds</a>
+							</li>
+						</ul>
+					</div>
+					<div class="information">
+						<p>Information</p>
+						<ul>
+							<li>
+								<a href="#" title="link">Affiliate</a>
+							</li>
+							<li>
+								<a href="#" title="link">Cookies</a>
+							</li>
+							<li>
+								<a href="#" title="link">How to Shop</a>
+							</li>
+							<li>
+								<a href="#" title="link">About Nelly</a>
+							</li>
+							<li>
+								<a href="#" title="link">Investor relations</a>
+							</li>
+						</ul>
+					</div>
+					<div class="campaigns">
+						<p>Campaings</p>
+						<ul>
+							<li>
+								<a href="#" title="link">Evening dresses</a>
+							</li>
+							<li>
+								<a href="#" title="link">Makeup</a>
+							</li>
+							<li>
+								<a href="#" title="link">Fashion forward</a>
+							</li>
+							<li>
+								<a href="#" title="link">training clothes</a>
+							</li>
+							<li>
+								<a href="#" title="link">Special Occassion Dresses</a>
+							</li>
+						</ul>
+					</div>
+					<div class="stores">
+						<p>Stores</p>
+						<ul>
+							<li>
+								<a href="#" title="link">Paris</a>
+							</li>
+							<li>
+								<a href="#" title="link">New York</a>
+							</li>
+							<li>
+								<a href="#" title="link">London</a>
+							</li>
+							<li>
+								<a href="#" title="link">Madrid</a>
+							</li>
+							<li>
+								<a href="#" title="link">Tokio</a>
+							</li>
+						</ul>
+					</div>
+					<div class="social none-768" >
+						<p>Social</p>
+						<ul>
+							<li>
+								<a href="#" title="link"><img src="images/twit.png" alt="logo"></a>
+							</li>
+							<li>
+								<a href="#" title="link"><img src="images/p.png" alt="logo"></a>
+							</li>
+							<li>
+								<a href="#" title="link"><img src="images/f.png" alt="logo"></a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#" title="link"><img src="images/g.png" alt="logo"></a>
+							</li>
+							<li>
+								<a href="#" title="link"><img src="images/t.png" alt="logo"></a>
+							</li>
+							<li>
+								<a href="#" title="link"><img src="images/v.png" alt="logo"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="secured none-768">
+						<img src="images/secured.png" alt="logo">
+					</div>
+					 <div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="footer-info">
+				<div class="accessibility">
+					<ul>
+						<li>
+							<a href="#" title="link">Privacy & Cookies</a>
+						</li>
+						<li>
+							<a href="#" title="link">Term & Condition</a>
+						</li>
+						<li>
+							<a href="#" title="link">Accessibility</a>
+						</li>
+						<li>
+							<a href="#" title="link">Store Directory</a>
+						</li>
+						<li>
+							<a href="#" title="link">About Us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="copywrite">
+					<p>@LookShop.com</p>
+					<p>All Rights Reserved</p>
+				</div>
+				 <div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+ </body>
+</html> 
